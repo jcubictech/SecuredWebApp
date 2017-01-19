@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/config
+/InquiryValidation/bin
+/CommonLib/obj/Debug
+/InquiryValidation/obj/Debug
+*.suo
+/CommonLib/bin/Debug
+/InquiryValidation/Logs
+/DjoDbTools/DojoDbTools.sqlproj.user
+/CommonLib/obj/Release
+/DjoDbTools/DojoDbTools.dbmdl
+/DjoDbTools/DojoDbTools.jfm
+/CommonLib/bin/Release
+/InquiryValidation/obj/Release/Package
+/InquiryValidation/obj/Release
+/DjoDbTools/bin/Debug
+/DjoDbTools/obj/Debug
+/InquiryValidation/App_Data/uploads

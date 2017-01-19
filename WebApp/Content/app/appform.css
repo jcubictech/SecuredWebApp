@@ -1,0 +1,101 @@
+﻿.clearfix { zoom: 1; }
+.bold {font-weight:bold;}
+.ss-font {font-family: arial,helvetica,'Tw Cen MT';font-size:12px;}
+.ss-h1 {font-size:30px;}
+.ss-h2 {font-size:24px;}
+.ss-h3 {font-size:20px;}
+.ss-h4, .ss-h4 a {font-size:16px;}
+.ss-h5, .ss-large {font-size:14px;}
+.ss-h6, .ss-normal {font-size:12px;}
+.ss-h7, .ss-small {font-size:10px;}
+.ss-text {width:300px;padding-right:20px;color:black;}
+.ss-text a {color:black;text-decoration:underline;font-weight:bold;}
+.ss-text span {color:black !important;}
+
+.ss-page-content {padding:20px;max-width:1200px;}
+.ss-page-content label {font-weight:normal;}
+.ss-page-content-half-width {max-width:50%;}
+.ss-page-bk-gray {background-color:#f8f8f8;}
+.ss-page-title {padding-top:20px;padding-bottom:10px;padding-left:10px;}
+.ss-article-title-divider {background-color:gray;height:2px;width:100%;}
+.ss-simple-box {padding:15px;border:1px solid lightgray;margin-top:20px;}
+.ss-simple-box-error {border:1px solid red;}
+.ss-sub-title-divider{margin-top:10px;background-color:#eeeeee;height:1px;width:100%;}
+.lead-width {min-width:100px;}
+.align-left {text-align:left;}
+.signin-section {margin-top:30px;}
+
+.ss-content {padding:20px;background-color:white;}
+.ss-form {}
+.ss-form-divider {background-color:gray;height:2px;width:100%;}
+.ss-form-description {padding-top:10px;padding-bottom:10px;}
+.ss-form-spacing {padding-top:20px;}
+.ss-form-note {color:#050143;}
+.threequarter-width{width:75%;}
+.half-width{width:50%;}
+.quarter-width{width:25%;}
+.ss-field-required {color:red;}
+.button-text {font-size:16px;}
+.action-btn {margin:20px 10px 20px 0px;}
+.app-dialog {padding:10px;}
+.dialog-text {padding-top:20px;padding-bottom:20px;}
+.no-left-padding {padding-left:0px;}
+.no-right-padding {padding-right:0px;}
+.bottom-margin-15 {margin-bottom:15px;}
+.k-window div.k-window-content {overflow: hidden;}
+
+.ss-left-margin5 {margin-left:5px !important;}
+.ss-left-margin10 {margin-left:10px !important;}
+.ss-top-margin40 {margin-top:40px !important;}
+.ss-top-margin20 {margin-top:20px !important;}
+.ss-top-margin10 {margin-top:10px !important;}
+.ss-offset-left10 {padding-left:10px;}
+.section-content-subtitle {margin-top:20px;padding-bottom:10px;}
+.ss-action-icon {height:28px;width:28px;margin-left:10px;cursor:pointer;}
+.ui-datepicker-trigger {
+    display: inline;
+    padding:0px;
+    padding-left:3px;
+    vertical-align:baseline;
+    position:relative;
+}
+.ui-autocomplete {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+    z-index:10000; /* need to be larger than colorbox for it to show inside colorbox */
+}
+
+.no-left-margin, .no-left-margin input {margin-left:0px !important;}
+.ss-modal-header .ui-dialog-titlebar-close {display:none;}
+.ss-modal-header .ui-dialog {padding-left:0;padding-right:0;}
+.ui-widget-header {background-color:cornsilk !important;}
+.ss-modal-header .ui-dialog-titlebar {
+    display:block;
+    font-size:24px;
+    font-weight:normal;
+    text-align:center;
+    padding:3px;
+    font-family: arial, helvetica, 'Tw Cen MT';
+    background-color:cornsilk;
+}
+.ss-admin-options {margin-top:15px;margin-bottom:15px;}
+.ss-admin-options li {line-height:28px;}
+.ss-grid-container {margin:10px;margin-top:20px;}
+.ss-grid-900 {width:900px !important;}
+.ss-grid-full {width:100% !important;}
+.ss-data-grid {width:400px;}
+.ss-data-grid tr th.k-header {font-weight:bold;}
+.ss-data-grid tr td.k-button {line-height:16px;}
+.alert-container {}
+
+.input-note {padding-left:120px;}
+.input-group-addon span.fa {width:85px;}
+.input-group-addon span.fa span {padding-left:5px;}
+
+.ss-upload-file {max-width:100%;}
+.upload-section .ss-h4 {line-height:32px;padding-left:5px;}
+
+.ss-back-link {margin-top:15px;}
+.ss-input-width-full {max-width:100%;}

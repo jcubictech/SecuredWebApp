@@ -1,0 +1,43 @@
+﻿@model SecuredWebApp.Models.View.MaintenanceViewModel
+@{
+    Layout = null;
+}
+
+@section styles
+{
+    <link rel="Stylesheet" href="@Href("~/Content/site.css")" />
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Site - Maintenance</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div class="container">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    This Web Site is offline for maintenance. The maintenance is expected to end at
+                    @Model.EstimatedOnLineTime.ToString("hh:mm tt dddd, MMMM d, yyyy")
+                </div>
+                <p><br /></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer area -->
+    <div id="ce-footer">
+        <div class="footer-panel">
+            <div class="footer center">
+                <div id="footer-copyright"> <span>&copy; 2015 - 2017 Jcubic. All rights reserved.</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

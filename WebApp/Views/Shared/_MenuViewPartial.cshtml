@@ -1,0 +1,77 @@
+﻿@using SecuredWebApp.Data.Providers
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-header">
+        <!-- logo -->
+        <div class="row">
+            <div class="navbar-brand">
+                <a href="@Url.Action("Index", "Home")"><img style="height:30px" src="~/Content/app-icon.png" /> SecuredWebApp</a>
+            </div>
+        </div>
+        <!-- menu bar -->
+        <nav class="row">
+            <ul class="nav navbar-nav">
+                @if (AuthorizationProvider.HasRole())
+                {
+                    <!-- home -->
+                    <li>
+                        <div class="vertical-align">
+                            @Html.ActionLink("Home", "Index", "Home")
+                            @if (ViewBag.PageHint == "pricing")
+                            {
+                                <i class="navbar-active fa fa-caret-up"></i>
+                            }
+                        </div>
+                    </li>
+                    <!-- administration -->
+                    if (AuthorizationProvider.IsAdmin())
+                    {
+                        <li class="dropdown">
+                            <div class="vertical-align">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Administration <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("User Management", "Users", "Admin")</li>
+                                    @if (AuthorizationProvider.IsSuperAdmin())
+                                    {
+                                        <li>@Html.ActionLink("Role Management", "Roles", "Admin")</li>
+                                    }
+                                    <li>@Html.ActionLink("Application Log", "ApplicationLog", "Admin")</li>
+                                    <li>@Html.ActionLink("User-Role Assignments", "UserRoles", "Admin")</li>
+                                </ul>
+                                @if (ViewBag.Title == "SecuredWebApp User Management" ||
+                                     ViewBag.Title == "SecuredWebApp Role Management" ||
+                                     ViewBag.Title == "SecuredWebApp User Role Management" ||
+                                     ViewBag.Title == "SecuredWebApp Application Log")
+                                {
+                                    <i class="navbar-active fa fa-caret-up"></i>
+                                }
+                            </div>
+                        </li>
+                    }
+                }
+            </ul>
+        </nav>
+    </div>
+
+    <!-- user / login / logout -->
+    <div class="actionBar-login">
+        <div class="loginName">@ViewBag.UserName</div>
+        <div class="loginEmail">@ViewBag.UserEmail&nbsp;</div>
+        @if (Request.IsAuthenticated)
+        {
+            <div>@Html.ActionLink("Sign Out", "Logout", "Account")</div>
+        }
+        else
+        {
+            <div>@Html.ActionLink("Sign In", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</div>
+        }
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        AppWeb.MenuActions.install();
+    });
+</script>
+
+
